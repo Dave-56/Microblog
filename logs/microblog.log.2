@@ -1,0 +1,94 @@
+2019-12-16 12:38:22,867 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-16 12:41:49,682 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-16 12:57:25,215 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-16 13:04:48,039 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-16 15:12:47,688 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-16 15:31:39,995 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-16 15:35:08,220 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-16 16:04:05,321 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 10:18:20,281 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 10:48:39,797 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 10:56:09,707 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 10:57:34,654 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 11:03:04,572 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 11:07:12,790 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 14:08:35,893 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 14:15:21,079 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 14:22:48,716 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 14:46:43,444 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-17 15:05:04,594 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-18 10:59:57,075 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-18 11:00:09,323 ERROR: Exception on / [GET] [in /Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2241, in preprocess_request
+    rv = func()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/routes.py", line 230, in before_request
+    g.locale = str(get_locale())
+NameError: name 'get_locale' is not defined
+2019-12-18 11:00:10,799 ERROR: Exception on /favicon.ico [GET] [in /Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2241, in preprocess_request
+    rv = func()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/routes.py", line 230, in before_request
+    g.locale = str(get_locale())
+NameError: name 'get_locale' is not defined
+2019-12-18 11:07:33,674 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-18 11:07:36,086 ERROR: Exception on /index [GET] [in /Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2241, in preprocess_request
+    rv = func()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/routes.py", line 233, in before_request
+    g.locale = str(get_locale())
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 253, in get_locale
+    babel = current_app.extensions['babel']
+KeyError: 'babel'
+2019-12-18 11:07:37,172 ERROR: Exception on /favicon.ico [GET] [in /Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2241, in preprocess_request
+    rv = func()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/routes.py", line 233, in before_request
+    g.locale = str(get_locale())
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 253, in get_locale
+    babel = current_app.extensions['babel']
+KeyError: 'babel'
+2019-12-18 11:08:02,490 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]

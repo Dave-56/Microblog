@@ -1,0 +1,106 @@
+2019-12-18 11:16:59,646 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-18 11:17:02,143 ERROR: Exception on /search [GET] [in /Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/routes.py", line 248, in search
+    return render_template('search.html', title='Search', posts=posts,
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/templates/search.html", line 13, in <module>
+    {{ Previous results }}
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/lexer.py", line 381, in expect
+    raise TemplateSyntaxError("expected token %r, got %r" %
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'results'
+2019-12-18 11:18:46,217 ERROR: Exception on /search [GET] [in /Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/routes.py", line 248, in search
+    return render_template('search.html', title='Search', posts=posts,
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/templates/search.html", line 1, in <module>
+    {% extends "base.html" %}
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/templates/search.html", line 14, in root
+    </a>
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/templates/base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block_doc
+    {% block body -%}
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 39, in block_html
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 92, in block_body
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/templates/base.html", line 88, in block_content
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/templates/search.html", line 29, in block_main
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/app/templates/_post.html", line 17, in root
+    </table>
+  File "/Users/preciousemakenemi/Desktop/projects/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 411, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'fimages' is undefined
+2019-12-18 11:20:07,278 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]

@@ -1,0 +1,44 @@
+Microblog in Flask
+
+Flask extensions
+- wtf-forms
+- Flask-SQLAlchemy - DB
+    - SQLAlchemy - object relational mapper
+    - ORMs allow applications to manage a database using high-level entities such as classes, objects and methods instead of tables and SQL. The job of the ORM is to translate the high-level operations into database commands.
+- Database Migrations - Need to update existing db when the app and data structure changes
+    - flask-migrate (wrapper for Alembic, DB migration framework for SQLAlchemy)
+
+- In general, you will want to work with UTC dates and times in a server application. This ensures that you are using uniform timestamps regardless of where the users are located. These timestamps will be converted to the user's local time when they are displayed. 
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+
+- Flask-Login:
+    This extension manages the user logged-in state, so that for example users can log in to the application and then navigate to different pages while the application "remembers" that the user is logged in. It also provides the "remember me" functionality that allows users to remain logged in even after closing the browser window.
+
+- Gravatar for user images
+
+- Debugger pin - 125-927-169
+- export FLASK_DEBUG=1
+
+- Python's logging package to write its logs, and this package already has the ability to send logs by email. All I need to do to get emails sent out on errors is to add a SMTPHandler instance to the Flask logger object, which is app.logger:
+    export MAIL_SERVER=smtp.googlemail.com
+    export MAIL_PORT=587
+    export MAIL_USE_TLS=1
+    export MAIL_USERNAME=<your-gmail-username>
+    export MAIL_PASSWORD=<your-gmail-password>
+- Logging categories, Logging Handler
+
+- Database - many to many relationship (e.g following and followers), will need an assoc table
+     A relationship in which instances of a class are linked to other instances of the same class is called a self-referential relationship
+- Any time new features are added, write a unit test - UnitTest framework     
+
+- Flask-Mail for email support, JSON Web Tokens for password reset links with secure tokens
+- keeping send_email func in a different thread for faster app processing
+    seing app context in function, read on app and request context
+- Flask-bootstrap, flask-moment extensions (css, date)
+- flask-babel (language translation)    
+- Click flask package for creating cli commands
+- Blueprint: better application structure for large scale apps
+- for multiple jobs where thread can't scale properly, use celery
+- Elastic search for searching through webapps
+- Traditional Hosting: Amazon lightsail, gunicorn, mySQL db, nginx, supervisor(monitors web server in case of any crashes)
+- Alternative: Heroku
