@@ -104,3 +104,4 @@ Traceback (most recent call last):
     return obj[argument]
 jinja2.exceptions.UndefinedError: 'fimages' is undefined
 2019-12-18 11:20:07,278 INFO: Microblog startup [in /Users/preciousemakenemi/Desktop/projects/microblog/app/_init_.py:62]
+2019-12-19 10:17:27,952 INFO: Microblog startup [in /Users/preciousemakenemi/Downloads/Microblog/app/_init_.py:67]

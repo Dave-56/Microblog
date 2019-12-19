@@ -24,3 +24,6 @@ class Config(object):
 
     #...Elastic search
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL') or None
+
+    #... heroku, to log to stdout
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
